@@ -32,3 +32,9 @@ chsh -s /usr/local/bin/fish
 # Delete build directory
 cd ../../
 rm -rf fish-install
+
+echo "Installing fisher"
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
+echo "Installing fish plugins"
+fisher install jethrokuan/z
