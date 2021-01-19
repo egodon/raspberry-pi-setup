@@ -12,6 +12,7 @@ DB = "internetspeed"
 
 client = InfluxDBClient(HOST, PORT, USER, PASSWORD, DB)
 
+print("Starting speedtest...")
 response = (
     subprocess.Popen(
         "/usr/local/bin/speedtest-cli --json", shell=True, stdout=subprocess.PIPE

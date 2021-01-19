@@ -38,3 +38,4 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
 echo "Installing fish plugins"
 fisher install jethrokuan/z
+fisher install jorgebucaran/nvm.fish
